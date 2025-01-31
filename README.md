@@ -35,7 +35,7 @@ In our exploration of state-of-the-art AI models, we compared **Mistral** and **
 ## 🔑 Why This Duo Is the Best Fit for FIM
 
 1. **Efficient Sparse Attention**  
-   - Mistral's architecture supports dense/sparse attention, which complements FIM's ability to prune irrelevant data structurally.
+   - Mistral’s architecture supports dense/sparse attention, which complements FIM's ability to prune irrelevant data structurally.
 
 2. **Enhanced Interpretability**  
    - FIM's fractal indexing offers a clear, interpretable structure that helps mitigate risks of AI "hallucinations" or strategic deception.
@@ -48,11 +48,11 @@ In our exploration of state-of-the-art AI models, we compared **Mistral** and **
 ## 🛠 Implementation Roadmap
 
 ### 1. FIM-Based Structured Index
-- **Fractal Tokenization**: Convert text into "fractal coordinates," capturing semantic position.  
-- **Multi-Time-Scale Hooks**: Tag tokens with either **"short-term"** or **"long-term"** weighting references.
+- **Fractal Tokenization**: Convert text into “fractal coordinates,” capturing semantic position.  
+- **Multi-Time-Scale Hooks**: Tag tokens with either **“short-term”** or **“long-term”** weighting references.
 
 ### 2. Hybrid Attention
-- **Modified `attention.py`**: Mistral's attention now checks FIM for sub-block relevance, enhancing focus on meaningful data.
+- **Modified `attention.py`**: Mistral’s attention now checks FIM for sub-block relevance, enhancing focus on meaningful data.
 
 ### 3. Safety & Interpretability
 - **Provenance Recording**: Maintain a fractal ledger of how memory changes occur, ensuring transparency and auditability.
@@ -77,7 +77,7 @@ In our exploration of state-of-the-art AI models, we compared **Mistral** and **
 | `attention.py`              | Implements **FIM-aware** sparse attention                                               | 600-1000          |
 | `attention_scores.py`       | Adjusts weight calculations for **FIM sub-block priorities**                            | 400-600           |
 | `residuals.py`              | Modifies residual connections to preserve **hierarchical** structure                    | 200-500           |
-| `embeddings.py`             | Embeds fractal sub-block positions into Mistral's vector space                         | 300-500           |
+| `embeddings.py`             | Embeds fractal sub-block positions into Mistral’s vector space                         | 300-500           |
 
 ---
 
@@ -85,7 +85,7 @@ In our exploration of state-of-the-art AI models, we compared **Mistral** and **
 
 - **🔄 10-100×** Search-space reduction for large contexts  
 - **⚡ 30-50%** Faster inference on structured queries  
-- **🧠 Enhanced interpretability** via fractal "map" of meaning  
+- **🧠 Enhanced interpretability** via fractal “map” of meaning  
 - **Deception Mitigation**: Log memory changes for potential auditing
 
 ---
